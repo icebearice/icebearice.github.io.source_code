@@ -1,6 +1,6 @@
 ---
 layout: article
-title: Java基础知识体系串讲
+title: Java基础知识体系串讲1-基础知识
 date: 2019-08-29 22:20:40
 updated: 2019-08-29 22:20:40
 categories: 
@@ -9,7 +9,7 @@ tags:
   - Java
 ---
 
-## Java基础知识体系串讲
+## Java基础知识体系串讲1-基础知识
 
 #### 知识层次分布
 
@@ -195,20 +195,21 @@ tags:
     ```
 
   - String.intern()
+    
     - intern()方法设计的初衷，就是重用String对象，以节省内存消耗
     
   - 使用intern()方法，运行时间增长，这是因为，虚拟机会先new String后再intern指向常量池中的引用
     
   	  ```java
       String s = new String("1");  //常量池中添加“1”，生成堆对象s，返回指向堆中s的引用
-    	String intern = s.intern();  //常量池中已有“1”，返回常量池中“1”的引用
-    	String s2 = "1";  //常量池中已有“1”，返回常量池中“1”的引用
+      	String intern = s.intern();  //常量池中已有“1”，返回常量池中“1”的引用
+      	String s2 = "1";  //常量池中已有“1”，返回常量池中“1”的引用
   		System.out.println(s2 == intern);//true  两者返回的都是常量池中“1”的引用
       System.out.println(s == intern);//false  堆引用地址和常量池引用地址不相等
-    
-    	原文链接：https://blog.csdn.net/hz90s/article/details/80819619
+      
+      	原文链接：https://blog.csdn.net/hz90s/article/details/80819619
   	```
-    	
+    
     - 实验证明，如引用常量池中的String，会有限返回intern生成的新的堆引用地址的String
     
   - String.equal()
