@@ -7,6 +7,5 @@ categories:
   - RPC
 tags:
   - RPC
-  - Thrift
 ---
 

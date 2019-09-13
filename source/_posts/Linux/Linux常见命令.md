@@ -336,3 +336,14 @@ $: 匹配正则表达式的结束行。
 
 <https://www.runoob.com/w3cnote/java-capture-group.html>
 
+##### Linux/Unix 时间输出妙用
+
+{% note success %}
+
+<code>date "+%Y-%m-%d %H:%M:%S"</code>，即可输出对应格式时间
+
+![image-20190909150224200](Linux常见命令/image-20190909150224200.png)
+
+参考链接：https://blog.csdn.net/jk110333/article/details/8590746
+
+{% endnote %}

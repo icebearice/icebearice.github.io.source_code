@@ -1,4 +1,13 @@
-### 操作系统与Linux综合学习
+---
+layout: article
+title: 操作系统与Linux综合学习
+date: 2019-08-27 21:04:09
+updated: 2019-08-29 21:04:09
+categories: 
+  - Linux
+tags: 
+  - Linux
+---
 
 #### 内核
 
@@ -19,6 +28,7 @@
 然而，如果开发顺利，单内核结构就可以从运行效率上得到好处
 
 常见的宏内核有Linux和Unix
+<!--more-->
 
 ##### 微内核
 
