@@ -61,4 +61,23 @@ maven有提供各种各样的`模版`，这里只讲`quickstart`和`webapp`的�
 
 其实两个骨架除了文件目录结构上的区别外，区别就是`quickstart`已经将`SpringBoot`的配置文件`application.properties`给创建好了，不需要我们额外的去创建该配置文件，是传统的`webapp`向`SpringBoot`的一个转型，为了`SpringBoot`去制定的一个`Archetype`
 
-### 
+quickstart创建的是以jar包的方式，提供一个对外的统一输出
+
+原来的webapp创建的是以war包的方式，部署在Tomcat或者JBoss这种J2EE的这种容器里面
+
+#### Building a RESFul Web Service
+
+1. 引入对应的pom文件的spring start 依赖
+   1. Spring-boot-starter-parent 指定父pom
+   2. Spring-boot-starter-web 依赖关系如下
+      1. maven 支持 jar
+      2. logging jar
+      3. tomcat jar
+      4. web jar
+2. groupId和artifactId和version
+   1. 请看maven篇
+3. emmm 导包过程中 突然想起一道笔试题 
+   1. 在import语句上只可以有注释
+      1. 还可以有包名 我是猪吧 🐷
+   2. 8090端口被ssr占用
+

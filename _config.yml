@@ -90,8 +90,9 @@ theme: next
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
     type: git
-    repo: https://gitee.com/icebearice/icebearice
-    branch: master
+    repo: 
+        gitee:  https://gitee.com/icebearice/icebearice.git,master
+        github: https://github.com/icebearice/icebearice.github.io.git,master
 
 # 自动生成sitemap
 sitemap:
